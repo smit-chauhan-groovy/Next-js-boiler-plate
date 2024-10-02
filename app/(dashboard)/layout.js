@@ -6,10 +6,10 @@ export default function DashboardLayout({ children }) {
       <nav>
         <ul>
           <li>
-            <a href="/dashboard/profile">Profile</a>
+            <a href="/profile">Profile</a>
           </li>
           <li>
-            <a href="/dashboard/settings">Settings</a>
+            <a href="/settings">Settings</a>
           </li>
         </ul>
       </nav>

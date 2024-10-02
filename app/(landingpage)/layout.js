@@ -6,9 +6,9 @@ export default function DashboardLayout({ children }) {
   return (
     <div>
       <Typography
+        variant="title"
         style={{
           fontSize: "40px !important",
-          fontFamily: "var(--font-geist-sans)",
         }}
       >
         My tee time w

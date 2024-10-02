@@ -35,8 +35,8 @@ theme = createTheme(theme, {
       styleOverrides: {
         title: {
           fontSize: 22,
-          color: "white",
-          // fontFamily: "GilbertQualifiDemo",
+          color: "black",
+          fontFamily: "var(--ralway-bold)",
         },
         h1: {
           fontSize: 24,

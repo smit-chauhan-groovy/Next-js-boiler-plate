@@ -1,7 +1,25 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import { useAppDispatch } from "../store";
+import { setAccessToken } from "../store/authSlice";
 
 const LandingPage = () => {
-  return <div>Landing page w</div>;
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(setAccessToken("smit"));
+    console.log("hello");
+  }, []);
+
+  return (
+    <div
+      style={{
+        fontFamily: "var(--ralway-bold)",
+      }}
+    >
+      Landing page w
+    </div>
+  );
 };
 
 export default LandingPage;
