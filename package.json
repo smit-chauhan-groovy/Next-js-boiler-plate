@@ -16,6 +16,7 @@
     "@mui/material-nextjs": "^6.0.2",
     "@mui/styles": "^6.0.2",
     "@reduxjs/toolkit": "^2.2.7",
+    "mongoose": "^8.7.1",
     "next": "14.2.9",
     "next-redux-wrapper": "^8.1.0",
     "react": "^18",

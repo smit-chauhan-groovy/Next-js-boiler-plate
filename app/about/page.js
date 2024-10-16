@@ -1,17 +1,10 @@
 "use client";
 import { Button, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import authActions from "../redux/reducers/auth/actions";
+import React from "react";
 
 const About = () => {
   const router = useRouter();
-  const { setAccessToken } = authActions;
-
-  const { accessToken } = useSelector((state) => state.auth);
-
-  const dispatch = useDispatch();
 
   return (
     <div>

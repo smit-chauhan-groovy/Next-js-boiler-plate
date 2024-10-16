@@ -3,11 +3,11 @@ import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 
 const withAuth = (Component) => {
-  return (props) => {
+  const AuthenticatedComponent = (props) => {
     const router = useRouter();
 
     useEffect(() => {
-      const isAuthenticated = false;
+      const isAuthenticated = false; // Replace with your actual authentication logic
 
       if (!isAuthenticated) {
         router.push("/");
@@ -16,6 +16,12 @@ const withAuth = (Component) => {
 
     return <Component {...props} />;
   };
+
+  AuthenticatedComponent.displayName = `withAuth(${
+    Component.displayName || Component.name || "Component"
+  })`;
+
+  return AuthenticatedComponent;
 };
 
 export default withAuth;

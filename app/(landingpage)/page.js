@@ -6,10 +6,10 @@ import { setAccessToken } from "../store/authSlice";
 const LandingPage = () => {
   const dispatch = useAppDispatch();
 
-  useEffect(() => {
-    dispatch(setAccessToken("smit"));
-    console.log("hello");
-  }, []);
+  // useEffect(() => {
+  //   dispatch(setAccessToken("smit"));
+  //   console.log("hello");
+  // }, []);
 
   return (
     <div
