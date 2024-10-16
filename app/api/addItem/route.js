@@ -2,13 +2,12 @@ import { NextResponse } from "next/server";
 import dbConnect from "../../../lib/mongodb"; // Adjust path as needed
 import Item from "../../models/item"; // Adjust path as needed
 
-// This handles POST requests
 export async function POST(req) {
-  await dbConnect(); // Connect to the database
+  await dbConnect();
 
   try {
-    const body = await req.json(); // Parse the JSON request body
-    const item = await Item.create(body); // Mongoose create method
+    const body = await req.json();
+    const item = await Item.create(body);
 
     return NextResponse.json({ success: true, data: item }, { status: 201 });
   } catch (error) {
